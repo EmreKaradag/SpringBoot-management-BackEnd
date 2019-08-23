@@ -39,10 +39,5 @@ public class User extends BaseEntity {
   @OneToMany(fetch = FetchType.LAZY)
   private List<Issue> issues;
 
-  //olurda ihtiyaç duyarsam. bu kullanıcıyı select ettiğimde bu kulanıcıya ait issue ları görmek istiyor olursam diye
-  // buna lazy sekilde oneToMany dedim
-  // bir tane kullanıcıya birçok issue baglanabilir. onları çekmek istedğimdede List çagırıcam
-
-
 
 }
