@@ -16,11 +16,6 @@ import java.util.Date;
 
 public class BaseEntity implements Serializable {
 
-  // bu nesnenın networkten yazılabilmesini veya diske yazılabilmesini serial saglıyor
-  // hibernate orm nesnesi olacagı için serializable olması lazım
-
-  // bunun içerisine koyacagım bazı proler bütün tablolarda olsun istiyorum
-
   @Column(name = "created_at")
   @Temporal(TemporalType.TIMESTAMP)
   private Date createAt;
@@ -36,6 +31,6 @@ public class BaseEntity implements Serializable {
   private String updatedBy;
 
   @Column(name = "status")
-  private Boolean status; // her kaydın durumunu belirtiyorum
+  private Boolean status; 
 
 }
