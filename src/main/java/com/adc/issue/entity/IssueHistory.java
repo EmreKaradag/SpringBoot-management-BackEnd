@@ -21,7 +21,7 @@ public class IssueHistory extends BaseEntity {
 
   @JoinColumn(name = "issue_id")
   @ManyToOne(optional = true,fetch = FetchType.LAZY)
-  private Issue isssue; // her history bir issue ait olcak
+  private Issue isssue; 
 
 
   @Column(name = "description",length = 1000)
@@ -45,5 +45,5 @@ public class IssueHistory extends BaseEntity {
   @ManyToOne(optional = true,fetch = FetchType.LAZY)
   private User assignee;
 
-  //bu tabloda issue geçmişini tutcam.
+  
 }
