@@ -8,11 +8,11 @@ import org.springframework.data.domain.Pageable;
 
 public interface IssueService  {
 
-  IssueDto save(IssueDto issue); //issue kaydını parametre aldı metodum. o kaydettiği kaydın son halini geri döndü
+  IssueDto save(IssueDto issue); 
 
-  IssueDto getById(Long id); // bi id vercem metoda oda bana o id li kaydı döndürecek
+  IssueDto getById(Long id); 
 
-  TPage<IssueDto> getAllPageable(Pageable pageable); // 10. sayfadakı 10 kaydı dönder gib.
+  TPage<IssueDto> getAllPageable(Pageable pageable);
 
   Boolean delete(IssueDto issue);
 
